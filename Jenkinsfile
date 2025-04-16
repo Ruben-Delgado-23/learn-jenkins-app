@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             agent {
                 docker {
-                    image 'alpine'
+                    image 'maven:3.5.0'
                     reuseNode true
                 }
             }
